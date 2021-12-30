@@ -1,0 +1,28 @@
+.mainHeader {
+  height: 60px;
+}
+.col-md-6,
+.col-md-6 {
+  font-size: large;
+}
+.col-md-6 {
+  margin-top: 15px;
+}
+ul,
+li {
+  list-style-type: none;
+}
+ul,
+li,
+a {
+  text-decoration: none;
+}
+a:hover {
+  background-color: rgb(20, 30, 37);
+  border-radius: 3px;
+}
+a {
+  background-color: rgb(85, 161, 223);
+  border-radius: 5px;
+  padding: 10px;
+}

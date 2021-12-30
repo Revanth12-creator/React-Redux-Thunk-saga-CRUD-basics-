@@ -1,0 +1,10 @@
+import { applyMiddleware, compose, createStore } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+import createSagaMiddleware from "redux-saga";
+import thunk from "redux-thunk";
+import { watcher } from "../saga/CountComp";
+import  rootReducer from './Reducer/index';
+const sagaMiddleware =createSagaMiddleware();
+const store=createStore(rootReducer,composeWithDevTools(applyMiddleware(thunk,sagaMiddleware)));
+sagaMiddleware .run(watcher);
+export default store;
