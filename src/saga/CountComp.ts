@@ -13,6 +13,5 @@ export function* watcher(){
     yield all([
         takeEvery('INCRESE_COUNT',increseCountValue),
         takeEvery('DECRESE_COUNT',decreseCountValue),
-
     ]) 
 }

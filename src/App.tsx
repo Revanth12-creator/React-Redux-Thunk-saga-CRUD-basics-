@@ -8,6 +8,7 @@ import { Route, BrowserRouter, Router, Routes } from "react-router-dom";
 import Users from "./components/NormaStoreUsers/Users";
 import ThunkUserList from "./components/ThunkUsers/ThunkUserList";
 import SagaCompo from "./components/SagaBasics/SagaCompo";
+import AddUser from "./components/NormaStoreUsers/AddUser";
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,8 @@ function App() {
           <Route path="users" element={<UserList />} />
           <Route path="thunkusers" element={<ThunkUserList />} />
           <Route path="sagaexample" element={<SagaCompo />} />
-
+          <Route path="adduser" element={<AddUser />} />
+          <Route path="edituser/:id" element={<AddUser />} />
         </Routes>
       </BrowserRouter>
     </div>

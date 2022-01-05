@@ -10,11 +10,13 @@ export default function UserList() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    var url = "https://reqres.in/api/users?page=1";
+    var url = "http://localhost:5000/crud";
     axios
       .get(url)
       .then((res) => {
-        setUserData(res.data.data);
+        console.log("resData", res.data);
+
+        setUserData(res.data);
       })
       .catch((e) => console.log(e));
   }, []);

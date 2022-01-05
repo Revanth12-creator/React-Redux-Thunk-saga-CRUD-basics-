@@ -16,7 +16,7 @@ export const getUsers=(user:any)=> {
 export const removeUser=(id:number)=> {
     console.log(id)
     return {
-        type:ActionTypes.GET_USER_LIST,
+        type:ActionTypes.REMOVE_USER,
         id
     };
 }
