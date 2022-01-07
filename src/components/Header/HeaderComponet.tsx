@@ -10,6 +10,12 @@ export default function Header() {
             <ul className="d-flex">
               <li>
                 {" "}
+                <a href="/" className="text-light m-3">
+                  Home
+                </a>
+              </li>
+              <li>
+                {" "}
                 <a href="/users" className="text-light m-3">
                   Noraml-Store-Users
                 </a>

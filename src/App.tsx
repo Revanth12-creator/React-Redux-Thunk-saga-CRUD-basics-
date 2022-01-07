@@ -9,6 +9,7 @@ import Users from "./components/NormaStoreUsers/Users";
 import ThunkUserList from "./components/ThunkUsers/ThunkUserList";
 import SagaCompo from "./components/SagaBasics/SagaCompo";
 import AddUser from "./components/NormaStoreUsers/AddUser";
+import Home from "./components/Home";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       {/* <UserList /> */}
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="users" element={<UserList />} />
           <Route path="thunkusers" element={<ThunkUserList />} />
           <Route path="sagaexample" element={<SagaCompo />} />

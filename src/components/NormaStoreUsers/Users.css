@@ -4,7 +4,20 @@ img {
   height: 50px;
   border-radius: 50%;
 }
-/* .add {
+/* .paginate {
   display: flex;
-  align-items: flex-start;
+  list-style: none;
+  color: white;
+}
+
+.paginate > .active > a {
+  color: white;
+  border-color: aqua;
+  background-color: aqua;
+}
+.paginate > li > a {
+  border: 1px solid #47ccde;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
 } */

@@ -54,6 +54,7 @@ export default function AddUser() {
     let res = axios.patch(url, userData);
     console.log(res);
     navigate(`/users`);
+    
   };
   console.log("userData", userData);
 

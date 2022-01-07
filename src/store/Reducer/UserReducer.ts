@@ -17,7 +17,7 @@ export const getUSerReducer=(state=[], action:IAction):any=> {
         case UserActionns.ActionTypes.GET_USER_LIST:
             return {...state, user:action.user};
         case UserActionns.ActionTypes.REMOVE_USER:
-            return state.filter((data:any)=> data.id !== action.id);
+            return {...state}
         default :
         return state
     }
